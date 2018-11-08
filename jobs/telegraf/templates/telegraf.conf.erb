@@ -1,0 +1,44 @@
+[global_tags]
+  bosh-job = "<%= name %>"
+  bosh-deployment = "<%= spec.deployment %>"
+<% p("global_tags").each do |k, v| %>
+  <%= k %> = "<%= v %>"
+<% end %>
+
+[[outputs.influxdb]]
+  urls = ["<%= p("influxdb.url") %>"]
+  database = "<%= p("influxdb.database") %>"
+  username = "<%= p("influxdb.username") %>"
+  password = "<%= p("influxdb.password") %>"
+  insecure_skip_verify = <%= p("influxdb.insecure_skip_verify") %>
+
+[[inputs.cpu]]
+  percpu = true
+  totalcpu = true
+  collect_cpu_time = false
+  report_active = false
+
+[[inputs.disk]]
+ignore_fs = ["tmpfs", "devtmpfs", "devfs"]
+
+[[inputs.diskio]]
+  free = true
+  total = true
+  used = true
+  used_percent = true
+  inodes_free = true
+  inodes_total = true
+  inodes_used = true
+
+[[inputs.kernel]]
+
+[[inputs.mem]]
+  available = true
+
+[[inputs.processes]]
+
+[[inputs.swap]]
+
+[[inputs.system]]
+
+[[inputs.net]]
