@@ -2,7 +2,7 @@ name: compilation-workspace
 
 releases:
 - name: telegraf
-  version: "4"
+  version: "1"
 
 stemcells:
 - alias: default
