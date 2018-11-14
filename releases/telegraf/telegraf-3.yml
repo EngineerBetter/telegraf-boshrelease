@@ -1,0 +1,15 @@
+name: telegraf
+version: "3"
+commit_hash: ac6a465
+uncommitted_changes: false
+jobs:
+- name: telegraf
+  version: 8c6246956ada72ce4fdfbd61cc0eeda7a266d038
+  fingerprint: 8c6246956ada72ce4fdfbd61cc0eeda7a266d038
+  sha1: 2bdd001228d83308bb67081374d14bed6f9a3d68
+packages:
+- name: telegraf
+  version: cc56dc6b2561e2ea2e137fa06eb0ca43a6a7cb91
+  fingerprint: cc56dc6b2561e2ea2e137fa06eb0ca43a6a7cb91
+  sha1: c2f5c1c80c75a913aab4b06336d6435f83b3f624
+  dependencies: []
