@@ -1,6 +1,8 @@
 builds:
   1000db74-40a7-4dba-55dc-5df1034a0c8a:
     version: "2"
+  417ddfb0-ab03-4c9d-6c11-df212e1f32b0:
+    version: "5"
   47732b85-2def-417b-4cce-a218345f51cd:
     version: "4"
   64f095ea-7626-4b7e-6d7a-d2da7cb77c3e:
